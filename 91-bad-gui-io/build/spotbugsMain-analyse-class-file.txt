@@ -1,0 +1,3 @@
+/Users/greppifilippo/oop/Laboratorio/lab09/91-bad-gui-io/build/classes/java/main/it/unibo/mvc/BadIOGUI$1.class
+/Users/greppifilippo/oop/Laboratorio/lab09/91-bad-gui-io/build/classes/java/main/it/unibo/mvc/BadIOGUI$2.class
+/Users/greppifilippo/oop/Laboratorio/lab09/91-bad-gui-io/build/classes/java/main/it/unibo/mvc/BadIOGUI.class

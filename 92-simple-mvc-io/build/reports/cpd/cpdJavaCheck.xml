@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd-cpd xmlns="https://pmd-code.org/schema/cpd-report"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         pmdVersion="7.7.0"
+         timestamp="2024-11-18T13:49:00.792844+01:00"
+         version="1.0.0"
+         xsi:schemaLocation="https://pmd-code.org/schema/cpd-report https://pmd.github.io/schema/cpd-report_1_0_0.xsd">
+   <file path="/Users/greppifilippo/oop/Laboratorio/lab09/92-simple-mvc-io/src/main/java/it/unibo/mvc/Controller.java"
+         totalNumberOfTokens="113"/>
+   <file path="/Users/greppifilippo/oop/Laboratorio/lab09/92-simple-mvc-io/src/main/java/it/unibo/mvc/SimpleGUI.java"
+         totalNumberOfTokens="235"/>
+   <file path="/Users/greppifilippo/oop/Laboratorio/lab09/92-simple-mvc-io/src/main/java/it/unibo/mvc/SimpleGUIWithFileChooser.java"
+         totalNumberOfTokens="424"/>
+   <duplication lines="44" tokens="116">
+      <file begintoken="224"
+            column="60"
+            endcolumn="12"
+            endline="76"
+            endtoken="339"
+            line="33"
+            path="/Users/greppifilippo/oop/Laboratorio/lab09/92-simple-mvc-io/src/main/java/it/unibo/mvc/SimpleGUI.java"/>
+      <file begintoken="649"
+            column="10"
+            endcolumn="12"
+            endline="101"
+            endtoken="764"
+            line="59"
+            path="/Users/greppifilippo/oop/Laboratorio/lab09/92-simple-mvc-io/src/main/java/it/unibo/mvc/SimpleGUIWithFileChooser.java"/>
+      <codefragment><![CDATA[        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        /*
+         * Handlers 
+         */
+        saveButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(final ActionEvent e) {
+                controller.writeOnFile(textArea.getText());
+            }
+        });
+    }
+
+    private void display() {
+        /*
+            * Make the frame one fifth the resolution of the screen. This very method is
+            * enough for a single screen setup. In case of multiple monitors, the
+            * primary is selected. In order to deal coherently with multimonitor
+            * setups, other facilities exist (see the Java documentation about this
+            * issue). It is MUCH better than manually specify the size of a window
+            * in pixel: it takes into account the current resolution.
+            */
+        final Dimension screen = Toolkit.getDefaultToolkit().getScreenSize();
+        final int sw = (int) screen.getWidth();
+        final int sh = (int) screen.getHeight();
+        frame.setSize(sw / PROPORTION, sh / PROPORTION);
+        /*
+        * Instead of appearing at (0,0), upper left corner of the screen, this
+        * flag makes the OS window manager take care of the default positioning
+        * on screen. Results may vary, but it is generally the best choice.
+        */
+        frame.setLocationByPlatform(true);
+        /*
+        * OK, ready to push the frame onscreen
+        */
+        frame.setVisible(true);
+    }
+
+    /**
+     * Launches the application.
+     *
+     * @param args ignored
+     */
+    public static void main(final String[] args) {
+        new SimpleGUI().display();
+]]></codefragment>
+   </duplication>
+</pmd-cpd>
