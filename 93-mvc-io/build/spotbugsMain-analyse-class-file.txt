@@ -1,0 +1,5 @@
+/Users/greppifilippo/oop/Laboratorio/lab09/93-mvc-io/build/classes/java/main/it/unibo/mvc/SimpleGUI$2.class
+/Users/greppifilippo/oop/Laboratorio/lab09/93-mvc-io/build/classes/java/main/it/unibo/mvc/SimpleGUI.class
+/Users/greppifilippo/oop/Laboratorio/lab09/93-mvc-io/build/classes/java/main/it/unibo/mvc/SimpleController.class
+/Users/greppifilippo/oop/Laboratorio/lab09/93-mvc-io/build/classes/java/main/it/unibo/mvc/SimpleGUI$1.class
+/Users/greppifilippo/oop/Laboratorio/lab09/93-mvc-io/build/classes/java/main/it/unibo/mvc/Controller.class
